@@ -11,10 +11,10 @@ const Footer = () => {
         </p>
         <div className="social a navbar-split-footer">
           <a href="https://www.instagram.com/?hl=pl">
-            <FaInstagram />
+            <FaInstagram size={30} style={{ fill: "white" }} />
           </a>
           <a href="https://www.facebook.com/">
-            <FaFacebookSquare />
+            <FaFacebookSquare size={30} style={{ fill: "white" }} />
           </a>
         </div>
       </div>

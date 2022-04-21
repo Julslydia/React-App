@@ -1,9 +1,12 @@
 const Item = ({ isNew, name }) => {
   return (
     <div className="box">
-      <div className="box_content">
-        <h2>{isNew ? `${name} (nowość)` : `${name}`}</h2>
-      </div>
+      <h2 className="box_center">
+        {isNew
+          ? `${name}
+          (nowość)`
+          : `${name}`}
+      </h2>
       {isNew ? <div className="new"></div> : null}
     </div>
   );

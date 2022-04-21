@@ -353,21 +353,30 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+}
+
+.box_center {
+  font-size: 24px;
+}
+/* Usługa 1 padding*/
+.box:first-child {
+  padding: 50px;
 }
 
 /* TABLET */
 @media screen and (max-width: 576px) {
   .box {
     width: 50%;
-    /* height: 40%; */
     margin: 30px;
-  }
-  .box_content h2 {
-    font-size: 24px;
+    padding: 30px;
   }
   #align-center {
     text-align: center;
     font-size: 36px;
+  }
+  .box_center {
+    text-align: center;
   }
 }
 
@@ -376,7 +385,10 @@ a {
   .box {
     width: 25%;
     margin: 30px;
+    padding: 40px;
+    font-size: 24px;
   }
+
   .photo-w,
   .photo-m,
   .photo-m1,
@@ -391,6 +403,9 @@ a {
     text-align: center;
     font-size: 36px;
   }
+  .box {
+    padding: 40px;
+  }
 }
 
 .box::before {
@@ -398,12 +413,6 @@ a {
   padding-top: 100%;
   float: left;
 }
-.box_content h2 {
-  font-size: 24px;
-}
-/* .box_content {
-  width: 15px;
-} */
 
 .box:hover {
   transform: scale(1.05);
@@ -419,6 +428,9 @@ a {
   .box:hover {
     background-color: white;
     pointer-events: none;
+  }
+  .box {
+    padding: 40px;
   }
 }
 
